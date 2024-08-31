@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Example</title>
+    <style>
+        h1 {
+            text-align: center; /* 中央揃い */
+            background-color: #cff6e3; /* 背景色 */
+            border: 2px solid #000; /* 枠線 */
+            border-radius: 15px; /* 枠の丸み */
+            padding: 10px; /* 内側の余白 */
+        }
+    </style>
+</head>
+<!-- PhotoSwipe -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/umd/photoswipe.umd.min.js" integrity="sha512-xH3c1Jh7FbAehFlrbmiFLL7fm2YxZRXtRJ0O9Kc+RkCW5VLkLeARPe8RwgCfzYt4N1JRqzxZtBMgsJzLehA4Tw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/umd/photoswipe-lightbox.umd.min.js" integrity="sha512-OB04yghyy2BT/S1t5HihjY4Jw9Us/5Fw1p5Jw41DIx71Kx+G4SjiPpd3n2ecsYAp7gJL0saH0J6k5elzVHp2+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.min.css" integrity="sha512-LFWtdAXHQuwUGH9cImO9blA3a3GfQNkpF2uRlhaOpSbDevNyK1rmAjs13mtpjvWyi+flP7zYWboqY+8Mkd42xA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body>
+  <h1>むすた写真館</h1>
+</body>
+</html>
+<!-- CSS -->
+<style  type="text/css">
+#gallery {
+  width: 95%;
+  margin: 1em auto; /* 上下,左右 */
+  display: flex;/* 親要素 flex container */
+  flex-flow: wrap;/* 折り返し */
+}
+#gallery img {
+  width: 100%;
+  height: auto;
+  border: none;
+  max-width: 310px;/* サイズ調整 */
+  margin: 5em 0;
+  padding: 8px; /* 写真外枠 */
+  background: #fff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+}
+#gallery p {
+  flex: 270px;/* 子要素 flex Item */
+  margin: 2em 3em;
+}
+.pic-r1 {
+  z-index: 2;
+  transform: rotate(-10deg);
+}
+.pic-r2 {
+  z-index: 5;
+  transform: rotate(15deg);
+}
+.pic-r3 {
+  z-index: 3;
+  transform: rotate(5deg);
+}
+.pic-r4 {
+  z-index: 5;
+  transform: rotate(-3deg);
+}
+.pic-r5 {
+  z-index: 5;
+  animation: animation-1 6s infinite ease 1s both;
+}
+.pic-r6 {
+  z-index: 2;
+  transform: rotate(-10deg);
+}
+.pic-r7 {
+  z-index: 2;
+  transform: rotate(-10deg);
+}
+.pic-r8 {
+  z-index: 5;
+  transform: rotate(15deg);
+}
+.pic-r9 {
+  z-index: 3;
+  transform: rotate(5deg);
+}
+.pic-r10 {
+  z-index: 5;
+  transform: rotate(-3deg);
+}
+.pic-r11 {
+  z-index: 5;
+  animation: animation-1 6s infinite ease 1s both;
+}
+.pic-r12 {
+  z-index: 2;
+  transform: rotate(-10deg);
+}
+@keyframes animation-1 {
+  0% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(8deg);
+  }
+}
+</style>
+
+<!-- 画像挿入 -->
+<center>
+<div  id="gallery">
+<p  class="pic-r1">
+<a  href="./img/mst1.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst1.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r2">
+<a  href="./img/mst2.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst2.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r3">
+<a  href="./img/mst3.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst3.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r4">
+<a  href="./img/mst4.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst4.jpg" style="pointer-events: none">
+</a>
+</p>
+<p  class="pic-r5">
+<a  href="./img/mst5.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst5.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r6">
+<a  href="./img/mst6.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst6.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r7">
+<a  href="./img/mst7.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst7.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r8">
+<a  href="./img/mst8.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst8.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r9">
+<a  href="./img/mst9.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst9.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r10">
+<a  href="./img/mst10.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst10.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r11">
+<a  href="./img/mst11.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst11.jpg" style="pointer-events: none">
+</a>
+</p>
+
+<p  class="pic-r12">
+<a  href="./img/mst12.jpg" data-pswp-width="" data-pswp-height="">
+<img  src="./img/mst12.jpg" style="pointer-events: none">
+</a>
+</p>
+</div><!-- gallery -->
+</center>
+
+<!-- PhotoSwipe -->
+<script type="text/javascript">
+var lightbox = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe
+});
+lightbox.init();
+</script>
+
+<!-- 画像サイズを取得して属性に挿入 -->
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+    const galleries = gallery.querySelectorAll('a');
+    galleries.forEach((el) => {
+        loadImage(el.href).then(img => {
+            el.setAttribute('data-pswp-width', img.naturalWidth);
+            el.setAttribute('data-pswp-height', img.naturalHeight);
+            el.firstElementChild.removeAttribute('style');
+        });
+    });
+});
+
+function loadImage(src) {
+    return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = (e) => reject(e);
+        img.src = src;
+    });
+}
+</script>
